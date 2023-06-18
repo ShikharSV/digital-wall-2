@@ -1,0 +1,109 @@
+.container{
+    display: flex;
+    position: relative;
+    width: 80%;  
+    margin: auto auto;
+    margin-top: 2rem; 
+}
+.form{
+    /* border: 2px solid red; */
+    width: 76%;
+}
+.heading{
+    height: 80%;
+    text-align: right;
+    font-size: 6rem;
+    /* border: 2px solid red; */
+    letter-spacing: 0.7rem;
+    width: 50%;
+    line-height: 10rem;
+}
+#headingWord{
+    color: rgb(255, 255, 255);
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    height: 100%;
+    
+}
+.formExample1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formExample1 label{
+    margin: 0px auto;
+    padding: 0.5rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    letter-spacing: 3px;
+    color: rgb(255, 122, 144);
+}
+.formExample1 input{
+    border-radius: 10px;
+    border: 3px double rgba(128, 128, 128, 0.392);
+    letter-spacing: 1.5px;
+    height: 3rem;
+
+}
+.formExample2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formExample2 label{
+    margin: 0px auto;
+    padding: 0.5rem 0;
+    color: rgb(255, 122, 144);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    letter-spacing: 3px;
+
+}
+.formExample2 input{
+    border-radius: 10px;
+    border: 3px double rgba(128, 128, 128, 0.392);
+    letter-spacing: 1.5px;
+    height: 3rem;
+
+}
+.formExample3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formExample3 label{
+    margin: 0px auto;
+    color: rgb(255, 122, 144);
+    padding: 0.5rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    letter-spacing: 3px;
+
+}
+.formExample3 input{
+    border-radius: 10px;
+    border: 3px double rgba(128, 128, 128, 0.392);
+    letter-spacing: 1.5px;
+    height: 10rem;
+
+}
+.formExample4{
+    width: 100%;
+    /* border: 2px solid red; */
+    align-items: center;
+    text-align: center;
+}
+.formExample4 button{
+    padding: 10px 2rem;
+    background: none;
+    border: 2px solid rgb(255, 122, 144);
+    color: rgb(255, 122, 144);
+    letter-spacing: 2px;
+
+}

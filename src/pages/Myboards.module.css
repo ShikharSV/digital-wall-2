@@ -1,0 +1,38 @@
+.heading{
+    height: 60%;
+    text-align: right;
+    font-size: 6rem;
+    border: 2px solid red;
+    letter-spacing: 0.7rem;
+    width: 30%;
+    right: 0;
+    line-height: 10rem;
+    position: absolute;
+    margin-right: 9rem;
+}
+.container{
+    display: flex;
+    position: relative;
+    width: 55%;  
+    margin-top: 2rem;
+    margin-left: 2.5rem; 
+    border: 2px solid red;
+}
+.boards{
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.board{
+
+}
+.board1{
+    height: 20rem;
+    background-color: aqua;
+}
+.board2{
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
+}

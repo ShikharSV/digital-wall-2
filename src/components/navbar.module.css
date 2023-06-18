@@ -1,0 +1,95 @@
+.back{
+  z-index: 0;
+  background-color: #cb9686;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  height: 1000px;
+}
+.nav{
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    z-index: 2;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  #nav{
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .left{
+    /* border: 2px solid rgb(0, 111, 39); */
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .logo{
+    /* border: 2px solid cyan; */
+    padding: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .listItems{
+    /* border: 2px solid rgb(21, 56, 255); */
+    /* padding: 2rem; */
+    margin: auto 0px;
+    padding: 1rem;
+    width: 60%;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+  }
+  li{
+    padding: 10px 10px;
+    font-size: 1.2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .right{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+  }
+  .logos{
+    /* border: 2px solid black; */
+    margin: auto 0px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .button{
+    border: 2px solid rgb(255, 255, 255);
+    margin: auto 0px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+  a{
+    /* border: 10px solid cyan; */
+    padding: 2px;
+  }
+  a img{
+    width: 20px;
+    height: 20px;
+  }
+  .btn{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1em;
+    border: none;
+    padding: 2px;
+    background-color: transparent;
+  }
+  .btn a{
+    text-decoration: none;
+    color: white;
+  }
