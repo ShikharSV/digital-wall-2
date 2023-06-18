@@ -23,8 +23,8 @@ function App() {
   }, []);
   return (
     <>
-      <Navbar title="Create Wall"/> 
       <BrowserRouter>
+      <Navbar title="Create Wall"/> 
         <Routes>
           <Route path='/' exact element={<LandingPage/>}></Route>
           <Route path='/create-blog' element={<CreateBlog/>}></Route>

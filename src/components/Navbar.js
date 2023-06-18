@@ -20,12 +20,12 @@ const Navbar = (props) => {
                 </div>
                 <div className={styles.right}>
                     <div className={styles.logos}>
-                        <a href="instagram.com"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
-                        <a href="youtube.com"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/youtube-play--v1.png" alt="youtube-play--v1"/></a>
-                        <a href="facebook.com"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/facebook-new.png" alt="facebook-new"/></a>
+                        <Link to="instagram.com"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></Link>
+                        <Link to="youtube.com"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/youtube-play--v1.png" alt="youtube-play--v1"/></Link>
+                        <Link to="facebook.com"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/facebook-new.png" alt="facebook-new"/></Link>
                     </div>
                     <div className={styles.button}>
-                        <button className={styles.btn}><a href='/create-wall'>{props.title}</a></button>
+                        <button className={styles.btn}><Link to='/create-wall'>{props.title}</Link></button>
                     </div>
                 </div>
             </div>
