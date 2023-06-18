@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "../pages/CreateBlog.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import Navbar from "../components/Navbar";
 const CreateBlog = (props) => {
     const [title, setTitle] = useState("");
     const [tags, setTags] = useState("");
@@ -12,7 +14,8 @@ const CreateBlog = (props) => {
     event.preventDefault();
     hiddenFileInput.current.click();
   };
-
+  const currentUser = useSelector((state) => state.users.currentUser);
+  const currentWall = useSelector((state) => state.walls.currentWall);
   const handleCreation = (e) => {
     e.preventDefault();
     console.log("hi");
@@ -41,23 +44,24 @@ const CreateBlog = (props) => {
 
   return (
     <>
+      <Navbar title="My Wall"/>
       <div className={styles.topForm}>
         <div className={styles.firstInputPart}>
         <form action="" method="post" className={styles.form1}>
           <div className={styles.formExample1}>
             <label for="name">TITLE </label>
-            <input type="text" name="name" id="name" placeholder="Enter title of your blog...." required />
+            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} name="name" id="name" placeholder="Enter title of your blog...." required />
           </div>
           <div className={styles.formExample2}>
             <label for="Tag">TAG </label>
-            <input type="text" name="tag" id="tag" placeholder="Enter tag of your blog...." required />
+            <input type="text" value={tags} onChange={(e) => setTags(e.target.value)} name="tag" id="tag" placeholder="Enter tag of your blog...." required />
           </div>
           <div className={styles.formExample3}>
             <label for="Text">TEXT </label>
-            <input type="text" name="text" id="text" placeholder="Start Writing...." required />
+            <input type="text" value={body} onChange={(e) => setBody(e.target.value)} name="text" id="text" placeholder="Start Writing...." required />
           </div>
           <div className={styles.formExample4}>
-            <button className={styles.btn} onClick={handleCreation}>Submit</button>
+            <button type="submit" className={styles.btn} onClick={handleCreation}>Submit</button>
           </div>
         </form>
         </div>

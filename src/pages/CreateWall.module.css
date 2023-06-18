@@ -107,3 +107,51 @@
     letter-spacing: 2px;
 
 }
+.error{
+    /* border: 2px solid red; */
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    /* border: 2px solid black; */
+}
+.image1{
+    height: 30rem;
+}
+.writing{
+    /* border: 2px solid red; */
+    width: 30%;
+    margin: auto 2rem;
+    padding: 2rem;
+}
+.writing p{
+    /* border: 2px solid red; */
+    margin: .5rem;
+    padding: .5em;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+.writing button{
+    padding: 1em 2em;
+    margin: .5rem;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    letter-spacing: 2px;
+}
+.writing button:hover{
+    padding: 1em 2em;
+    margin: .5rem;
+    border: 2px solid rgb(255, 88, 186);
+    background-color: white;
+    color: rgb(255, 88, 186);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: ease-in;
+    transition-duration: 200ms;
+}

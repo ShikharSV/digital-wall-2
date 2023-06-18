@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from '../pages/LandingPage.module.css'
+import Navbar from '../components/Navbar'
 const LandingPage = () => {
   return (
     <>
+    <Navbar title="Create Board"/>
     <div className={styles.card}>
             <div className={styles.blogFirst}>
                 <section>
